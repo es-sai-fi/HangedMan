@@ -1,16 +1,15 @@
 package org.example.hangedman;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.example.hangedman.view.WelcomeStage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class Main extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
-
+    public void start(Stage primaryStage) throws IOException {
+        WelcomeStage.getInstance();
     }
 
     public static void main(String[] args) {
