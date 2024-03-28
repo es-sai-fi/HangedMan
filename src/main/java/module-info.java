@@ -4,5 +4,7 @@ module org.example.hangedman {
 
 
     opens org.example.hangedman to javafx.fxml;
+    opens org.example.hangedman.controller to javafx.fxml;
     exports org.example.hangedman;
 }
+

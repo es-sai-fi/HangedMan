@@ -10,6 +10,6 @@ import java.io.IOException;
 public class WelcomeController {
 
     @FXML
-    void onHandleButtonPlay(ActionEvent event) throws IOException {
+    void onHelloButtonClick(ActionEvent event) throws IOException {
     }
 }
