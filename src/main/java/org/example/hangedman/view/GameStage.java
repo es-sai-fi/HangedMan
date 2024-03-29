@@ -5,16 +5,19 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import org.example.hangedman.controller.GameController;
 
 import java.io.IOException;
 
-public class WelcomeStage extends Stage {
+public class GameStage extends Stage {
 
-    public WelcomeStage () throws IOException {
+    private GameController gameController;
+
+    public GameStage() throws IOException{
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "/org/example/hangedman/welcome-view.fxml"));
+                "/org/example/hangedman/game-view.fxml"));
         Parent root = loader.load();
-        setTitle("Hanged Man");
+        setTitle("Ventana de Juego");
         Scene scene = new Scene(root);
         getIcons().add(
                 new Image(
@@ -24,12 +27,15 @@ public class WelcomeStage extends Stage {
         show();
     }
 
-    private static class WelcomeStageHolder {
-        private static WelcomeStage INSTANCE;
+    public GameController getGameController() {
+        return gameController;
     }
 
-    public static WelcomeStage getInstance() throws IOException{
-        return WelcomeStageHolder.INSTANCE = new WelcomeStage();
+    public static GameStage getInstance() throws IOException{
+        return GameStageHolder.INSTANCE = new GameStage();
     }
 
+    private static class GameStageHolder {
+        private static GameStage INSTANCE;
+    }
 }

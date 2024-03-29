@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3656242-74da-43b0-ae75-5d2ea762c421" name="Changes" comment="Se intenta inicializar la primera ventana del proyecto y agregar el ícono... No funciona.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/favicon.png" afterDir="false" />
+    <list default="true" id="e3656242-74da-43b0-ae75-5d2ea762c421" name="Changes" comment="Se arregla el error ventana inicial.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/model/SecretWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/view/GameStage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/view/alert/AlertBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/view/alert/IAlertBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/game-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/WelcomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/view/WelcomeStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/view/WelcomeStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,27 +55,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;jmga&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "jmga",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "A:/IntelliJProyectos/HangedMan/src/main/java/org/example/hangedman/view/alert",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="A:\IntelliJProyectos\HangedMan\src\main\java\org\example\hangedman\view\alert" />
+      <recent name="A:\IntelliJProyectos\HangedMan\src\main\resources\org\example\hangedman" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.example.hangedman" />
       <recent name="" />
@@ -91,7 +102,9 @@
       <option name="presentableId" value="Default" />
       <updated>1711586421821</updated>
       <workItem from="1711586422856" duration="2497000" />
-      <workItem from="1711592241910" duration="368000" />
+      <workItem from="1711592241910" duration="405000" />
+      <workItem from="1711593720310" duration="216000" />
+      <workItem from="1711670241401" duration="2994000" />
     </task>
     <task id="LOCAL-00001" summary="e">
       <option name="closed" value="true" />
@@ -109,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711588529721</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Se arregla el error ventana inicial.">
+      <option name="closed" value="true" />
+      <created>1711592704775</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711592704775</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +140,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="e" />
     <MESSAGE value="Se intenta inicializar la primera ventana del proyecto y agregar el ícono... No funciona." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se intenta inicializar la primera ventana del proyecto y agregar el ícono... No funciona." />
+    <MESSAGE value="Se arregla el error ventana inicial." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se arregla el error ventana inicial." />
   </component>
 </project>
