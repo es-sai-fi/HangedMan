@@ -15,6 +15,7 @@ import static java.lang.Character.isLetter;
 
 public class WelcomeController {
 
+
     @FXML
     private ImageView hangedMan;
     @FXML
