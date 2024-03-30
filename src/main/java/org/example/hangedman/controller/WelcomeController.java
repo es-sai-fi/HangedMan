@@ -24,14 +24,20 @@ public class WelcomeController {
     void onWelcomeButtonClick(ActionEvent event) throws IOException {
         String word = secretWordTextField.getText();
         int wordLength = word.length();
-        /*for(int i = 0; i < wordLength; i++){
+        boolean wordIsValid = true;
+        for(int i = 0; i < wordLength; i++){
             if(!isLetter(word.charAt(i))){
-
+                wordIsValid = false;
+                AlertBox alert = new AlertBox();
+                alert.showMessage("¡Error!", "Palabra no válida.", "La palabra ingresada no es válida, por favor ingresar solo letras y/o no utilizar espacio.");
+                break;
             }
-        }*/
-        SecretWord secretWord = new SecretWord(word);
-        GameStage.getInstance().getGameController().setSecretWord(secretWord);
-        Stage stage = (Stage) secretWordTextField.getScene().getWindow();
-        stage.close();
+        }
+        if (wordIsValid){
+            SecretWord secretWord = new SecretWord(word);
+            GameStage.getInstance().getGameController().setSecretWord(secretWord);
+            Stage stage = (Stage) secretWordTextField.getScene().getWindow();
+            stage.close();
+        }
     }
 }
