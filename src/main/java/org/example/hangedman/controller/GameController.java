@@ -16,10 +16,10 @@ public class GameController {
     @FXML
     private TextField inputLetterTextField;
 
-    /*@FXML
-    public onAddLetterButtonClick(ActionEvent actionEvent) throws IOException {
+    //@FXML
+    //public onAddLetterButtonClick(ActionEvent actionEvent) throws IOException {
 
-    }*/
+    //}
 
     public void setSecretWord(SecretWord secretWord) {
         this.secretWord = secretWord;
