@@ -22,14 +22,14 @@
             <Image url="@hanged.png" />
          </image>
       </ImageView>
-      <Button layoutX="476.0" layoutY="148.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="76.0" style="-fx-background-color: grey;" text="Ayuda :,v" textFill="WHITE">
+      <Button layoutX="476.0" layoutY="148.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="76.0" style="-fx-background-color: grey;" text="Ayuda   :,v" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="13.0" />
+            <Font name="Blackadder ITC" size="14.0" />
          </font>
       </Button>
-      <Label layoutX="31.0" layoutY="88.0" text="Digite en cada casilla una letra" textFill="WHITE">
+      <Label layoutX="27.0" layoutY="76.0" text="Digite en cada casilla una letra" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="16.0" />
+            <Font name="Blackadder ITC" size="23.0" />
          </font></Label>
       <TextField layoutX="83.0" layoutY="136.0" prefHeight="13.0" prefWidth="24.0" />
       <TextField layoutX="115.0" layoutY="136.0" prefHeight="13.0" prefWidth="24.0" />
