@@ -11,16 +11,11 @@
 
 <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hangedman.controller.WelcomeController">
     <children>
-      <ImageView fitHeight="407.0" fitWidth="605.0">
+        <ImageView fitHeight="407.0" fitWidth="605.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@background1.png" />
+            <Image url="@images/welcomeViewBackGround.png" />
          </image>
-      </ImageView>
-        <ImageView fx:id="hangedMan" fitHeight="500.0" fitWidth="605.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-
-            </image></ImageView>
-
+        </ImageView>
         <Button layoutX="295.0" layoutY="233.0" mnemonicParsing="false" onAction="#onWelcomeButtonClick" style="-fx-border-color: gray; -fx-border-width: 3;" text="Jugar">
             <font>
                 <Font name="Blackadder ITC" size="13.0" />

@@ -24,21 +24,27 @@ public class WelcomeController {
     @FXML
     void onWelcomeButtonClick(ActionEvent event) throws IOException {
         String word = secretWordTextField.getText();
+        Stage stage = (Stage) secretWordTextField.getScene().getWindow();
         int wordLength = word.length();
-        boolean wordIsValid = true;
-        for(int i = 0; i < wordLength; i++){
-            if(!isLetter(word.charAt(i))){
-                wordIsValid = false;
-                AlertBox alert = new AlertBox();
-                alert.showMessage("¡Error!", "Palabra no válida.", "La palabra ingresada no es válida, por favor ingresar solo letras y/o no utilizar espacio.");
-                break;
-            }
+        if (wordLength == 0){
+            AlertBox alert = new AlertBox();
+            alert.showMessage("¡Error!", "No se ha ingresado una palabra.", "No se ha detectado una palabra, por favor ingrese una que contenga solo letras y no contenga espacios.", stage);
         }
-        if (wordIsValid){
-            SecretWord secretWord = new SecretWord(word);
-            GameStage.getInstance().getGameController().setSecretWord(secretWord);
-            Stage stage = (Stage) secretWordTextField.getScene().getWindow();
-            stage.close();
+        else{
+            boolean wordIsValid = true;
+            for(int i = 0; i < wordLength; i++){
+                if(!isLetter(word.charAt(i))){
+                    wordIsValid = false;
+                    AlertBox alert = new AlertBox();
+                    alert.showMessage("¡Error!", "Palabra no válida.", "La palabra ingresada no es válida, por favor ingresar solo letras y/o no utilizar espacio.", stage);
+                    break;
+                }
+            }
+            if (wordIsValid){
+                SecretWord secretWord = new SecretWord(word);
+                GameStage.getInstance().getGameController().setSecretWord(secretWord);
+                stage.close();
+            }
         }
     }
 }

@@ -17,6 +17,7 @@ public class GameStage extends Stage {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
                 "/org/example/hangedman/game-view.fxml"));
         Parent root = loader.load();
+        gameController = loader.getController();
         setTitle("Ventana de Juego");
         Scene scene = new Scene(root);
         getIcons().add(
