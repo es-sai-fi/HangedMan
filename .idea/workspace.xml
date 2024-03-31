@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3656242-74da-43b0-ae75-5d2ea762c421" name="Changes" comment="Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;Se mejoró la presentación de la ventana de inicio con una imágen de fondo con el título del juego y se agregó el botón ¿cómo jugar?&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra." />
+    <list default="true" id="e3656242-74da-43b0-ae75-5d2ea762c421" name="Changes" comment="Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;Se mejoró la presentación de la ventana de inicio con una imágen de fondo con el título del juego y se agregó el botón ¿cómo jugar?&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,27 +39,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Jamh",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/HangedMan/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Jamh&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/HangedMan/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\HangedMan\src\main\resources" />
@@ -139,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711775629028</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;Se mejoró la presentación de la ventana de inicio con una imágen de fondo con el título del juego y se agregó el botón ¿cómo jugar?&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.">
+      <option name="closed" value="true" />
+      <created>1711846640353</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711846640353</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
