@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e3656242-74da-43b0-ae75-5d2ea762c421" name="Changes" comment="Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;Se mejoró la presentación de la ventana de inicio con una imágen de fondo con el título del juego y se agregó el botón ¿cómo jugar?&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/WelcomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/view/GameStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/view/GameStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/view/alert/AlertBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/view/alert/AlertBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/view/alert/IAlertBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/view/alert/IAlertBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/game-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +22,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="Jamh" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -35,6 +32,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -54,7 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "jmga",
+    "git-widget-placeholder": "Jamh",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "A:/Scene Builder/SceneBuilder.exe",
     "node.js.detected.package.eslint": "true",
@@ -75,11 +73,11 @@
       <recent name="A:\IntelliJProyectos\HangedMan\src\main\resources\org\example\hangedman" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\HangedMan\src\main\resources\org\example\hangedman\images" />
       <recent name="A:\IntelliJProyectos\HangedMan\src\main\resources\org\example\hangedman\images" />
       <recent name="A:\IntelliJProyectos\HangedMan\src\main\resources\org\example\hangedman" />
       <recent name="A:\IntelliJProyectos\HangedMan\src\main\resources" />
       <recent name="C:\HangedMan\src\main\resources\org\example\hangedman" />
-      <recent name="C:\HangedMan\src\main\resources\org\example\hangedman\images" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.example.hangedman" />
@@ -110,6 +108,7 @@
       <workItem from="1711766122735" duration="5031000" />
       <workItem from="1711771182322" duration="4000" />
       <workItem from="1711771329894" duration="4354000" />
+      <workItem from="1711917488465" duration="3646000" />
     </task>
     <task id="LOCAL-00001" summary="e">
       <option name="closed" value="true" />
