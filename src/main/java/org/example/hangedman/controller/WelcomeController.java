@@ -23,7 +23,7 @@ public class WelcomeController {
 
     @FXML
     void onWelcomeButtonClick(ActionEvent event) throws IOException {
-        String word = secretWordTextField.getText();
+        String word = secretWordTextField.getText().toLowerCase();
         Stage stage = (Stage) secretWordTextField.getScene().getWindow();
         int wordLength = word.length();
         if (wordLength == 0){
@@ -42,7 +42,10 @@ public class WelcomeController {
             }
             if (wordIsValid){
                 SecretWord secretWord = new SecretWord(word);
-                GameStage.getInstance().getGameController().setSecretWord(secretWord);
+                GameController gameController = GameStage.getInstance().getGameController();
+                gameController.setSecretWord(secretWord);
+                gameController.createTextFields();
+
                 stage.close();
             }
         }
