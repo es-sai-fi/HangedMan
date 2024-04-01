@@ -5,22 +5,24 @@ import java.util.List;
 public class SecretWord {
 
     private String word;
-
     private int wordLength;
+    private String[] splitWordArray;
 
     public SecretWord(String word){
         this.word = word;
         wordLength = word.length();
+        splitWordArray = word.split("");
     }
 
-    public boolean letterIsInWord(char letter){
-        return word.contains(String.valueOf(letter));
+    public boolean letterIsInWord(String letter){
+        return word.contains(letter);
     }
 
-    public List<Integer> getIndicesOfChar(String word, char letter){
-        List<Integer> indices= new ArrayList<>();
+    public List<Integer> getIndicesOfChar(String inputLetter){
+        List<Integer> indices = new ArrayList<>();
         for (int i = 0; i < wordLength; i++){
-            if (word.charAt(i) == letter){
+            String letterAtWord = splitWordArray[i].toLowerCase();
+            if (letterAtWord.equals(inputLetter)){
                 indices.add(i);
             }
         }
@@ -29,6 +31,14 @@ public class SecretWord {
 
     public String getWord() {
         return word;
+    }
+
+    public int getWordLength() {
+        return wordLength;
+    }
+
+    public String[] getSplitWordArray() {
+        return splitWordArray;
     }
 
     public void setWord(String word) {
