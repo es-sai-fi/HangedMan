@@ -1,12 +1,14 @@
 package org.example.hangedman.controller;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
 import javafx.scene.text.Text;
@@ -62,8 +64,10 @@ public class GameController {
             textField.setEditable(false);
             textFields.add(textField);
             gameViewHBox.getChildren().add(textField);
+            //onKeyPressed(textField, i);
         }
     }
+
     @FXML
     void onAddLetterButtonClick(ActionEvent actionEvent) throws IOException {
         Stage stage = (Stage) stateLabel.getScene().getWindow();
@@ -122,6 +126,18 @@ public class GameController {
                     }
                 }
             }
+        }
+        addLetterTextField.setText("");
+    }
+
+    @FXML
+    void onAddLetterKeyPressed(KeyEvent keyEvent){
+        addLetterTextField.setEditable(true);
+        if(addLetterTextField.getText().length() >= 1){
+            addLetterTextField.setEditable(false);
+            addLetterTextField.setText("");
+            stateLabel.setStyle("-fx-font-size: 20px; -fx-text-fill: red;");
+            stateLabel.setText("Ingrese solo una letra.");
         }
     }
 
