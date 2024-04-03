@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3656242-74da-43b0-ae75-5d2ea762c421" name="Changes" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/hangedmanprogress1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/hangedmanprogress2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/skeleticosbailarines.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/text-1711993468369.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/text-1712091040939.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/text-1712091058039.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/text-1712091414332.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/text-1712091934450.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/text-1712092660320.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/youtube-video-gif.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/game-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/parthangman1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/parthangman2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/parthangman3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/parthangman4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/parthangman5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/parthangman6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="e3656242-74da-43b0-ae75-5d2ea762c421" name="Changes" comment="Merge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,28 +39,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;jmga&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;A:/Scene Builder/SceneBuilder.exe&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "A:/Scene Builder/SceneBuilder.exe",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\HangedMan\src\main\resources" />
@@ -130,6 +107,7 @@
       <workItem from="1711942611421" duration="74000" />
       <workItem from="1712014573431" duration="2123000" />
       <workItem from="1712103477656" duration="1224000" />
+      <workItem from="1712107324612" duration="392000" />
     </task>
     <task id="LOCAL-00001" summary="e">
       <option name="closed" value="true" />
