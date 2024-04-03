@@ -115,7 +115,7 @@ public class GameController {
                     errorCount += 1;
                     stateLabel.setStyle("-fx-font-size: 20px; -fx-text-fill: red;");
                     stateLabel.setText("La letra ingresada no se encuentra en la palabra secreta.");
-                    //hangedManProgress.setImage(new Image(String.valueOf(getClass().getResource("/org/example/hangedman/images/hangedManProgress" + errorCount + ".png"))));
+                    hangedManProgress.setImage(new Image(String.valueOf(getClass().getResource("/org/example/hangedman/images/hangedManProgress" + errorCount + ".png"))));
                     if (errorCount == 6) {
                         stateLabel.setStyle("-fx-font-size: 20px; -fx-text-fill: red;");
                         stateLabel.setText("Has perdido.");

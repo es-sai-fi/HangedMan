@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3656242-74da-43b0-ae75-5d2ea762c421" name="Changes" comment="Merge">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/hangedmanprogress1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/hangedmanprogress2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/skeleticosbailarines.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/text-1711993468369.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/text-1712091040939.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/text-1712091058039.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/text-1712091414332.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/text-1712091934450.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/text-1712092660320.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/youtube-video-gif.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/game-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/parthangman1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/parthangman2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/parthangman3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/parthangman4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/parthangman5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/images/parthangman6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +129,7 @@
       <workItem from="1711916344056" duration="25396000" />
       <workItem from="1711942611421" duration="74000" />
       <workItem from="1712014573431" duration="2123000" />
+      <workItem from="1712103477656" duration="1224000" />
     </task>
     <task id="LOCAL-00001" summary="e">
       <option name="closed" value="true" />
@@ -228,7 +248,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/hangedman/view/alert/AlertBox.java</url>
-          <line>5</line>
+          <line>6</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
