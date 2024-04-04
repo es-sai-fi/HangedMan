@@ -1,0 +1,38 @@
+Index: src/main/resources/org/example/hangedman/welcome-view.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.control.Label?>\r\n<?import javafx.scene.control.TextField?>\r\n<?import javafx.scene.image.Image?>\r\n<?import javafx.scene.image.ImageView?>\r\n<?import javafx.scene.layout.AnchorPane?>\r\n<?import javafx.scene.layout.VBox?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n<AnchorPane fx:id=\"anchorPane\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"407.0\" prefWidth=\"605.0\" xmlns=\"http://javafx.com/javafx/21\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"org.example.hangedman.controller.WelcomeController\">\r\n   <children>\r\n      <ImageView fx:id=\"hangedMan\" fitHeight=\"500.0\" fitWidth=\"605.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\r\n         <image>\r\n            <Image url=\"@../../../../../../../Users/USUARIO/Downloads/background1.jpg\" />\r\n         </image></ImageView>\r\n\r\n      <Button layoutX=\"269.0\" layoutY=\"249.0\" mnemonicParsing=\"false\" onAction=\"#onWelcomeButtonClick\" text=\"Jugar\">\r\n         <font>\r\n            <Font size=\"18.0\" />\r\n         </font></Button>\r\n      <VBox layoutX=\"-299.0\" layoutY=\"-239.0\" prefHeight=\"291.0\" prefWidth=\"397.0\" />\r\n      <TextField fx:id=\"secretWordTextField\" layoutX=\"228.0\" layoutY=\"202.0\" />\r\n      <Label layoutX=\"239.0\" layoutY=\"171.0\" text=\"Digite la palabra secreta\" textFill=\"WHITE\" />\r\n      <Label layoutX=\"262.0\" layoutY=\"75.0\" text=\"El Ahorcado\" textFill=\"RED\">\r\n         <font>\r\n            <Font name=\"Book Antiqua\" size=\"50.0\" />\r\n         </font>\r\n      </Label>\r\n      <Button layoutX=\"477.0\" layoutY=\"343.0\" mnemonicParsing=\"false\" style=\"-fx-font-size: 15;\" text=\"¿Cómo Jugar?\" />\r\n   </children>\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/org/example/hangedman/welcome-view.fxml b/src/main/resources/org/example/hangedman/welcome-view.fxml
+--- a/src/main/resources/org/example/hangedman/welcome-view.fxml	
++++ b/src/main/resources/org/example/hangedman/welcome-view.fxml	
+@@ -16,18 +16,20 @@
+             <Image url="@../../../../../../../Users/USUARIO/Downloads/background1.jpg" />
+          </image></ImageView>
+ 
+-      <Button layoutX="269.0" layoutY="249.0" mnemonicParsing="false" onAction="#onWelcomeButtonClick" text="Jugar">
++      <Button layoutX="260.0" layoutY="249.0" mnemonicParsing="false" onAction="#onWelcomeButtonClick" style="-fx-border-color: gray; -fx-border-width: 3;" text="Jugar">
+          <font>
+-            <Font size="18.0" />
++            <Font name="System Bold" size="19.0" />
+          </font></Button>
+       <VBox layoutX="-299.0" layoutY="-239.0" prefHeight="291.0" prefWidth="397.0" />
+-      <TextField fx:id="secretWordTextField" layoutX="228.0" layoutY="202.0" />
+-      <Label layoutX="239.0" layoutY="171.0" text="Digite la palabra secreta" textFill="WHITE" />
+-      <Label layoutX="262.0" layoutY="75.0" text="El Ahorcado" textFill="RED">
++      <TextField fx:id="secretWordTextField" layoutX="224.0" layoutY="204.0" style="-fx-border-color: gray; -fx-border-width: 3;" />
++      <Label layoutX="222.0" layoutY="166.0" text="Digite la palabra secreta" textFill="WHITE">
+          <font>
+-            <Font name="Book Antiqua" size="50.0" />
++            <Font name="System Bold" size="14.0" />
++         </font></Label>
++      <Label layoutX="170.0" layoutY="14.0" text="El Ahorcado" textFill="WHITE">
++         <font>
++            <Font size="50.0" />
+          </font>
+       </Label>
+-      <Button layoutX="477.0" layoutY="343.0" mnemonicParsing="false" style="-fx-font-size: 15;" text="¿Cómo Jugar?" />
+    </children>
+ </AnchorPane>

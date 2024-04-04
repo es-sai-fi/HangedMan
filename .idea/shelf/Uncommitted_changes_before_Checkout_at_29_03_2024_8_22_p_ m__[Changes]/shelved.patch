@@ -1,0 +1,203 @@
+Index: src/main/java/org/example/hangedman/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example.hangedman;\r\n\r\nimport javafx.application.Application;\r\nimport javafx.stage.Stage;\r\nimport org.example.hangedman.view.WelcomeStage;\r\n\r\nimport java.io.IOException;\r\n\r\npublic class Main extends Application {\r\n    @Override\r\n    public void start(Stage primaryStage) throws IOException {\r\n        WelcomeStage.getInstance();\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        launch(args);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/hangedman/Main.java b/src/main/java/org/example/hangedman/Main.java
+--- a/src/main/java/org/example/hangedman/Main.java	(revision 05f2d8897e1cc22a74f1972f6b76099606eaa3d7)
++++ b/src/main/java/org/example/hangedman/Main.java	(date 1711761645906)
+@@ -3,16 +3,29 @@
+ import javafx.application.Application;
+ import javafx.stage.Stage;
+ import org.example.hangedman.view.WelcomeStage;
+-
++import javafx.scene.image.ImageView;
+ import java.io.IOException;
+ 
+ public class Main extends Application {
+     @Override
+     public void start(Stage primaryStage) throws IOException {
+         WelcomeStage.getInstance();
++        // Crear un ImageView para la imagen de fondo
++        ImageView background = new ImageView(new Image(new FileInputStream("images/Fondoinicio.png")));
++
++        // Crear un StackPane como el contenedor principal
++        StackPane root = new StackPane();
++        root.getChildren().add(background);
++
++// Crear la escena y establecer el contenedor principal
++Scene scene = new Scene(root, 800, 600);
++
++// Establecer la escena en el escenario principal
++        primaryStage.setScene(scene);
++        primaryStage.show();
+     }
+ 
+-    public static void main(String[] args) {
+-        launch(args);
+-    }
++public static void main(String[] args) {
++    launch(args);
++}
+ }
+\ No newline at end of file
+Index: src/main/java/module-info.java
+===================================================================
+diff --git a/src/main/java/module-info.java b/src/main/java/module-info.java
+deleted file mode 100644
+--- a/src/main/java/module-info.java	(revision 05f2d8897e1cc22a74f1972f6b76099606eaa3d7)
++++ /dev/null	(revision 05f2d8897e1cc22a74f1972f6b76099606eaa3d7)
+@@ -1,10 +0,0 @@
+-module org.example.hangedman {
+-    requires javafx.controls;
+-    requires javafx.fxml;
+-
+-
+-    opens org.example.hangedman to javafx.fxml;
+-    opens org.example.hangedman.controller to javafx.fxml;
+-    exports org.example.hangedman;
+-}
+-
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e3656242-74da-43b0-ae75-5d2ea762c421\" name=\"Changes\" comment=\"Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/GameController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/GameController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/WelcomeController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/WelcomeController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/hangedman/model/SecretWord.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/hangedman/model/SecretWord.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/hangedman/view/alert/AlertBox.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/hangedman/view/alert/AlertBox.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/org/example/hangedman/game-view.fxml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JavaFXApplication\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"mavenHomeTypeForPersistence\" value=\"WRAPPER\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2eIJzY7JUUdh3EPxM723rQFgpjZ\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\r\n    \"Application.Main.executor\": \"Run\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"jmga\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/hp/Desktop/craps-game-sesion-4-final (1)\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"project.structure.last.edited\": \"Libraries\",\r\n    \"project.structure.proportion\": \"0.0\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"A:\\IntelliJProyectos\\HangedMan\\src\\main\\java\\org\\example\\hangedman\\view\\alert\" />\r\n      <recent name=\"A:\\IntelliJProyectos\\HangedMan\\src\\main\\resources\\org\\example\\hangedman\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"org.example.hangedman\" />\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e3656242-74da-43b0-ae75-5d2ea762c421\" name=\"Changes\" comment=\"\" />\r\n      <created>1711586421821</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1711586421821</updated>\r\n      <workItem from=\"1711586422856\" duration=\"2497000\" />\r\n      <workItem from=\"1711592241910\" duration=\"405000\" />\r\n      <workItem from=\"1711593720310\" duration=\"216000\" />\r\n      <workItem from=\"1711670241401\" duration=\"3782000\" />\r\n      <workItem from=\"1711674641660\" duration=\"629000\" />\r\n      <workItem from=\"1711754900325\" duration=\"3596000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"e\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711586565094</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711586565094</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Se intenta inicializar la primera ventana del proyecto y agregar el ícono... No funciona.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711588529721</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711588529721</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Se arregla el error ventana inicial.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711592704775</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711592704775</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711673616836</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711673616836</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"e\" />\r\n    <MESSAGE value=\"Se intenta inicializar la primera ventana del proyecto y agregar el ícono... No funciona.\" />\r\n    <MESSAGE value=\"Se arregla el error ventana inicial.\" />\r\n    <MESSAGE value=\"Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 05f2d8897e1cc22a74f1972f6b76099606eaa3d7)
++++ b/.idea/workspace.xml	(date 1711761702900)
+@@ -4,14 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="e3656242-74da-43b0-ae75-5d2ea762c421" name="Changes" comment="Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.">
++    <list default="true" id="e3656242-74da-43b0-ae75-5d2ea762c421" name="Changes" comment="e">
++      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Fondo inicio.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Fondoinicio.png" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/GameController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/controller/WelcomeController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/model/SecretWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/model/SecretWord.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/view/alert/AlertBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/view/alert/AlertBox.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/game-view.fxml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangedman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hangedman/Main.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -29,7 +27,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="master" />
++        <entry key="$PROJECT_DIR$" value="jamh" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -37,7 +35,7 @@
+   <component name="MavenImportPreferences">
+     <option name="generalSettings">
+       <MavenGeneralSettings>
+-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
++        <option name="mavenHome" value="Use Maven wrapper" />
+       </MavenGeneralSettings>
+     </option>
+   </component>
+@@ -59,9 +57,8 @@
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "jmga",
++    "git-widget-placeholder": "jamh",
+     "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "C:/Users/hp/Desktop/craps-game-sesion-4-final (1)",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+     "node.js.selected.package.eslint": "(autodetect)",
+@@ -74,10 +71,6 @@
+   }
+ }]]></component>
+   <component name="RecentsManager">
+-    <key name="CopyFile.RECENT_KEYS">
+-      <recent name="A:\IntelliJProyectos\HangedMan\src\main\java\org\example\hangedman\view\alert" />
+-      <recent name="A:\IntelliJProyectos\HangedMan\src\main\resources\org\example\hangedman" />
+-    </key>
+     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+       <recent name="org.example.hangedman" />
+       <recent name="" />
+@@ -98,12 +91,7 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1711586421821</updated>
+-      <workItem from="1711586422856" duration="2497000" />
+-      <workItem from="1711592241910" duration="405000" />
+-      <workItem from="1711593720310" duration="216000" />
+-      <workItem from="1711670241401" duration="3782000" />
+-      <workItem from="1711674641660" duration="629000" />
+-      <workItem from="1711754900325" duration="3596000" />
++      <workItem from="1711586422856" duration="2041000" />
+     </task>
+     <task id="LOCAL-00001" summary="e">
+       <option name="closed" value="true" />
+@@ -113,53 +101,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1711586565094</updated>
+     </task>
+-    <task id="LOCAL-00002" summary="Se intenta inicializar la primera ventana del proyecto y agregar el ícono... No funciona.">
+-      <option name="closed" value="true" />
+-      <created>1711588529721</created>
+-      <option name="number" value="00002" />
+-      <option name="presentableId" value="LOCAL-00002" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1711588529721</updated>
+-    </task>
+-    <task id="LOCAL-00003" summary="Se arregla el error ventana inicial.">
+-      <option name="closed" value="true" />
+-      <created>1711592704775</created>
+-      <option name="number" value="00003" />
+-      <option name="presentableId" value="LOCAL-00003" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1711592704775</updated>
+-    </task>
+-    <task id="LOCAL-00004" summary="Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.">
+-      <option name="closed" value="true" />
+-      <created>1711673616836</created>
+-      <option name="number" value="00004" />
+-      <option name="presentableId" value="LOCAL-00004" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1711673616836</updated>
+-    </task>
+-    <option name="localTasksCounter" value="5" />
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
+-  <component name="Vcs.Log.Tabs.Properties">
+-    <option name="TAB_STATES">
+-      <map>
+-        <entry key="MAIN">
+-          <value>
+-            <State />
+-          </value>
+-        </entry>
+-      </map>
+-    </option>
+-  </component>
+   <component name="VcsManagerConfiguration">
+     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+     <MESSAGE value="e" />
+-    <MESSAGE value="Se intenta inicializar la primera ventana del proyecto y agregar el ícono... No funciona." />
+-    <MESSAGE value="Se arregla el error ventana inicial." />
+-    <MESSAGE value="Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra." />
+-    <option name="LAST_COMMIT_MESSAGE" value="Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra." />
++    <option name="LAST_COMMIT_MESSAGE" value="e" />
+   </component>
+ </project>
+\ No newline at end of file

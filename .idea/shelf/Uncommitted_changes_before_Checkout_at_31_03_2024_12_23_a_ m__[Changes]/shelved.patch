@@ -1,0 +1,112 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e3656242-74da-43b0-ae75-5d2ea762c421\" name=\"Changes\" comment=\"Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;Se mejoró la presentación de la ventana de inicio con una imágen de fondo con el título del juego y se agregó el botón ¿cómo jugar?&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.\">\r\n<<<<<<< HEAD\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/org/example/hangedman/game-view.fxml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml\" afterDir=\"false\" />\r\n=======\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n>>>>>>> 3ad2394f5bf6db84df3566f9c0c24b2506a5a6cd\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JavaFXApplication\" />\r\n        <option value=\"Class\" />\r\n        <option value=\"FxmlFile\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2eIJzY7JUUdh3EPxM723rQFgpjZ\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n<<<<<<< HEAD\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\r\n    \"Application.Main.executor\": \"Run\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/LENOVO/HangedMan\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"project.structure.last.edited\": \"Libraries\",\r\n    \"project.structure.proportion\": \"0.0\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n=======\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;Application.Main.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;Jamh&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/HangedMan/src/main/resources&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n>>>>>>> 3ad2394f5bf6db84df3566f9c0c24b2506a5a6cd\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\HangedMan\\src\\main\\resources\" />\r\n      <recent name=\"A:\\IntelliJProyectos\\HangedMan\\src\\main\\java\\org\\example\\hangedman\\view\\alert\" />\r\n      <recent name=\"A:\\IntelliJProyectos\\HangedMan\\src\\main\\resources\\org\\example\\hangedman\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\LENOVO\\HangedMan\\src\\main\\resources\\org\\example\\hangedman\" />\r\n      <recent name=\"C:\\HangedMan\\src\\main\\resources\\org\\example\\hangedman\" />\r\n      <recent name=\"C:\\HangedMan\\src\\main\\resources\\org\\example\\hangedman\\images\" />\r\n      <recent name=\"C:\\HangedMan\\src\\main\\resources\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"org.example.hangedman\" />\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e3656242-74da-43b0-ae75-5d2ea762c421\" name=\"Changes\" comment=\"\" />\r\n      <created>1711586421821</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1711586421821</updated>\r\n      <workItem from=\"1711586422856\" duration=\"2497000\" />\r\n      <workItem from=\"1711592241910\" duration=\"405000\" />\r\n      <workItem from=\"1711593720310\" duration=\"216000\" />\r\n      <workItem from=\"1711670241401\" duration=\"3782000\" />\r\n      <workItem from=\"1711674641660\" duration=\"629000\" />\r\n      <workItem from=\"1711754900325\" duration=\"3596000\" />\r\n      <workItem from=\"1711766122735\" duration=\"5031000\" />\r\n      <workItem from=\"1711771182322\" duration=\"4000\" />\r\n      <workItem from=\"1711771329894\" duration=\"4354000\" />\r\n      <workItem from=\"1711840643350\" duration=\"5319000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"e\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711586565094</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711586565094</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Se intenta inicializar la primera ventana del proyecto y agregar el ícono... No funciona.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711588529721</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711588529721</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Se arregla el error ventana inicial.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711592704775</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711592704775</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711673616836</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711673616836</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;Se mejoró la presentación de la ventana de inicio con una imágen de fondo con el título del juego y se agregó el botón ¿cómo jugar?&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711775629028</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711775629028</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;Se mejoró la presentación de la ventana de inicio con una imágen de fondo con el título del juego y se agregó el botón ¿cómo jugar?&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711846640353</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711846640353</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/master\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"e\" />\r\n    <MESSAGE value=\"Se intenta inicializar la primera ventana del proyecto y agregar el ícono... No funciona.\" />\r\n    <MESSAGE value=\"Se arregla el error ventana inicial.\" />\r\n    <MESSAGE value=\"Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.\" />\r\n    <MESSAGE value=\"Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;Se mejoró la presentación de la ventana de inicio con una imágen de fondo con el título del juego y se agregó el botón ¿cómo jugar?&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;Se mejoró la presentación de la ventana de inicio con una imágen de fondo con el título del juego y se agregó el botón ¿cómo jugar?&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -1,53 +1,53 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="AutoImportSettings">
+-    <option name="autoReloadType" value="SELECTIVE" />
+-  </component>
+-  <component name="ChangeListManager">
+-    <list default="true" id="e3656242-74da-43b0-ae75-5d2ea762c421" name="Changes" comment="Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;Se mejoró la presentación de la ventana de inicio con una imágen de fondo con el título del juego y se agregó el botón ¿cómo jugar?&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.">
+-<<<<<<< HEAD
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/game-view.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" afterDir="false" />
+-=======
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+->>>>>>> 3ad2394f5bf6db84df3566f9c0c24b2506a5a6cd
+-    </list>
+-    <option name="SHOW_DIALOG" value="false" />
+-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-    <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="JavaFXApplication" />
+-        <option value="Class" />
+-        <option value="FxmlFile" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="Git.Settings">
+-    <option name="RECENT_BRANCH_BY_REPOSITORY">
+-      <map>
+-        <entry key="$PROJECT_DIR$" value="master" />
+-      </map>
+-    </option>
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="ProjectColorInfo">{
+-  &quot;associatedIndex&quot;: 8
+-}</component>
+-  <component name="ProjectId" id="2eIJzY7JUUdh3EPxM723rQFgpjZ" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+-    <ConfirmationsSetting value="2" id="Add" />
+-  </component>
+-  <component name="ProjectViewState">
+-    <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showLibraryContents" value="true" />
+-  </component>
+-<<<<<<< HEAD
+-  <component name="PropertiesComponent"><![CDATA[{
++    <component name="AutoImportSettings">
++        <option name="autoReloadType" value="SELECTIVE" />
++    </component>
++    <component name="ChangeListManager">
++        <list default="true" id="e3656242-74da-43b0-ae75-5d2ea762c421" name="Changes" comment="Se deja semi funcional la ventana de inicio.&#10;Se deja la base de GameStage.&#10;Se agrega AlertBox para ser usado luego.&#10;Se mejoró la presentación de la ventana de inicio con una imágen de fondo con el título del juego y se agregó el botón ¿cómo jugar?&#10;&#10;Falta:&#10;Algoritmo para verificar la palabra.&#10;Algoritmo para verificar que la letra esté.&#10;Interfaz de juego.&#10;Implementar un AlertBox para la verificación de la palabra.">
++            <<<<<<< HEAD
++            <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/game-view.fxml" afterDir="false" />
++            <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++            <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/hangedman/welcome-view.fxml" afterDir="false" />
++            =======
++            <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++            >>>>>>> 3ad2394f5bf6db84df3566f9c0c24b2506a5a6cd
++        </list>
++        <option name="SHOW_DIALOG" value="false" />
++        <option name="HIGHLIGHT_CONFLICTS" value="true" />
++        <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++        <option name="LAST_RESOLUTION" value="IGNORE" />
++    </component>
++    <component name="FileTemplateManagerImpl">
++        <option name="RECENT_TEMPLATES">
++            <list>
++                <option value="JavaFXApplication" />
++                <option value="Class" />
++                <option value="FxmlFile" />
++            </list>
++        </option>
++    </component>
++    <component name="Git.Settings">
++        <option name="RECENT_BRANCH_BY_REPOSITORY">
++            <map>
++                <entry key="$PROJECT_DIR$" value="master" />
++            </map>
++        </option>
++        <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    </component>
++    <component name="ProjectColorInfo">{
++        &quot;associatedIndex&quot;: 8
++        }</component>
++    <component name="ProjectId" id="2eIJzY7JUUdh3EPxM723rQFgpjZ" />
++    <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++        <ConfirmationsSetting value="2" id="Add" />
++    </component>
++    <component name="ProjectViewState">
++        <option name="hideEmptyMiddlePackages" value="true" />
++        <option name="showLibraryContents" value="true" />
++    </component>
++    <<<<<<< HEAD
++    <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+     "ASKED_ADD_EXTERNAL_FILES": "true",
+     "Application.Main.executor": "Run",

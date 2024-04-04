@@ -12,7 +12,7 @@
     <children>
       <ImageView fitHeight="407.0" fitWidth="605.0">
          <image>
-            <Image url="@images/skeleticosbailarines.gif" />
+            <Image url="@images/win.gif" />
          </image>
       </ImageView>
       <ImageView layoutX="266.0" layoutY="300.0">
@@ -24,17 +24,17 @@
         <TextField fx:id="secretWordTextField" layoutX="247.0" layoutY="255.0" style="-fx-border-color: gray; -fx-border-width: 3;" />
       <ImageView fitHeight="94.0" fitWidth="550.0" layoutX="28.0" layoutY="32.0">
          <image>
-            <Image url="@images/text-1711993468369.png" />
+            <Image url="@images/text1.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="31.0" fitWidth="265.0" layoutX="190.0" layoutY="204.0">
          <image>
-            <Image url="@images/text-1712091934450.png" />
+            <Image url="@images/text2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="24.0" fitWidth="66.0" layoutX="291.0" layoutY="314.0">
          <image>
-            <Image url="@images/text-1712092660320.png" />
+            <Image url="@images/text3.png" />
          </image>
       </ImageView>
         <Button layoutX="272.0" layoutY="307.0" mnemonicParsing="false" onAction="#onWelcomeButtonClick" prefHeight="36.0" prefWidth="102.0" style="-fx-background-color: transparent;">

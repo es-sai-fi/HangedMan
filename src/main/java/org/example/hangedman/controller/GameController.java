@@ -1,7 +1,6 @@
 package org.example.hangedman.controller;
 
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -11,11 +10,11 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.example.hangedman.model.SecretWord;
 import org.example.hangedman.view.alert.AlertBox;
-
+import org.example.hangedman.view.LoseStage;
+import org.example.hangedman.view.WinStage;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -64,7 +63,6 @@ public class GameController {
             textField.setEditable(false);
             textFields.add(textField);
             gameViewHBox.getChildren().add(textField);
-            //onKeyPressed(textField, i);
         }
     }
 
@@ -86,7 +84,7 @@ public class GameController {
                 }
             }
             if(wordHasAlreadyBeenAdded){
-                stateLabel.setStyle("-fx-font-size: 20px");
+                stateLabel.setStyle("-fx-font-size: 15px");
                 stateLabel.setText("La letra ya ha sido ingresada antes.");
             }
             else{
@@ -96,33 +94,39 @@ public class GameController {
                         TextField textField = textFields.get(integer);
                         textField.setText(inputLetter);
                     }
-                    stateLabel.setStyle("-fx-font-size: 20px; -fx-text-fill: green;");
+                    stateLabel.setStyle("-fx-font-size: 15px; -fx-text-fill: green;");
                     stateLabel.setText("Letra agregada.");
                     String computedWord = "";
                     for (int k = 0; k < wordLength; k++) {
                         computedWord += textFields.get(k).getText();
                     }
                     if (computedWord.equals(secretWord.getWord())) {
-                        stateLabel.setStyle("-fx-font-size: 20px; -fx-text-fill: green;");
+                        stateLabel.setStyle("-fx-font-size: 15px; -fx-text-fill: green;");
                         stateLabel.setText("¡¡¡HAS GANADO!!!");
                         addLetterTextField.setText("");
                         addLetterTextField.setEditable(false);
                         addButton.setDisable(true);
                         helpButton.setDisable(true);
+                        WinStage winStage = new WinStage();
+                        winStage.show();
+                        stage.close();
                     }
                 }
                 else {
                     errorCount += 1;
-                    stateLabel.setStyle("-fx-font-size: 20px; -fx-text-fill: red;");
+                    stateLabel.setStyle("-fx-font-size: 15px; -fx-text-fill: red;");
                     stateLabel.setText("La letra ingresada no se encuentra en la palabra secreta.");
                     hangedManProgress.setImage(new Image(String.valueOf(getClass().getResource("/org/example/hangedman/images/hangedManProgress" + errorCount + ".png"))));
                     if (errorCount == 6) {
-                        stateLabel.setStyle("-fx-font-size: 20px; -fx-text-fill: red;");
+                        stateLabel.setStyle("-fx-font-size: 15px; -fx-text-fill: red;");
                         stateLabel.setText("Has perdido.");
                         addLetterTextField.setText("");
                         addLetterTextField.setEditable(false);
                         addButton.setDisable(true);
                         helpButton.setDisable(true);
+                        LoseStage loseStage = new LoseStage();
+                        loseStage.show();
+                        stage.close();
                     }
                 }
             }
@@ -136,7 +140,7 @@ public class GameController {
         if(addLetterTextField.getText().length() >= 1){
             addLetterTextField.setEditable(false);
             addLetterTextField.setText("");
-            stateLabel.setStyle("-fx-font-size: 20px; -fx-text-fill: red;");
+            stateLabel.setStyle("-fx-font-size: 15px; -fx-text-fill: red;");
             stateLabel.setText("Ingrese solo una letra.");
         }
     }
@@ -145,7 +149,7 @@ public class GameController {
     void onHelpButtonClick(ActionEvent actionEvent) throws IOException{
         String[] splitWordArray = secretWord.getSplitWordArray();
         if(helpCount == 3){
-            stateLabel.setStyle("-fx-font-size: 20px; -fx-text-fill: red;");
+            stateLabel.setStyle("-fx-font-size: 15px; -fx-text-fill: red;");
             stateLabel.setText("Ya has recibido demasiadas pistas.");
             helpButton.setDisable(true);
         }
@@ -171,7 +175,7 @@ public class GameController {
                         TextField textField = textFields.get(integer);
                         textField.setText(helpLetter);
                     }
-                    stateLabel.setStyle("-fx-font-size: 20px; -fx-text-fill: green;");
+                    stateLabel.setStyle("-fx-font-size: 15px; -fx-text-fill: green;");
                     stateLabel.setText("Se agregó la letra: " + helpLetter + ".");
                 }
             }
@@ -183,12 +187,16 @@ public class GameController {
             computedWord += textFields.get(k).getText();
         }
         if (computedWord.equals(secretWord.getWord())) {
-            stateLabel.setStyle("-fx-font-size: 20px; -fx-text-fill: green;");
+            Stage stage = (Stage) stateLabel.getScene().getWindow();
+            stateLabel.setStyle("-fx-font-size: 15px; -fx-text-fill: green;");
             stateLabel.setText("¡¡¡HAS GANADO!!!");
             addLetterTextField.setText("");
             addLetterTextField.setEditable(false);
             addButton.setDisable(true);
             helpButton.setDisable(true);
+            WinStage winStage = new WinStage();
+            winStage.show();
+            stage.close();
         }
     }
 
