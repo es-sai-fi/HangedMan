@@ -4,17 +4,16 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0">
          <image>
-            <Image url="@../Downloads/youtube-video-gif%20(1).gif" />
+            <Image url="@images/perdiste%20gif.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="153.0" fitWidth="380.0" layoutX="110.0" layoutY="233.0">
+      <ImageView fitHeight="157.0" fitWidth="384.0" layoutX="108.0" layoutY="213.0">
          <image>
-            <Image url="@../Downloads/text-1712173079100.png" />
+            <Image url="@images/text8.png" />
          </image>
       </ImageView>
    </children>
